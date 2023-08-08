@@ -105,3 +105,9 @@ a {
     color-scheme: dark;
   }
 }
+
+@font-face {
+  font-family: "BayShore";
+  src: local("BayShore"), url("Bayshore.otf") format("truetype");
+}
+
