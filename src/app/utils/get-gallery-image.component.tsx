@@ -74,74 +74,77 @@ export const GalleryTwo = [
     "/images/gallery2/1-131.jpg",
     "/images/gallery2/1-134.jpg",
     "/images/gallery2/1-136.jpg",
-    "/images/gallery2/1-138.jpg",
-    "/images/gallery2/1-139.jpg",
-    "/images/gallery2/1-141.jpg",
-    "/images/gallery2/1-144.jpg",
-    "/images/gallery2/1-146.jpg",
-    "/images/gallery2/1-159.jpg",
-    "/images/gallery2/1-160.jpg",
-    "/images/gallery2/1-162.jpg",
-    "/images/gallery2/1-163.jpg",
-    "/images/gallery2/1-165.jpg",
-    "/images/gallery2/1-167.jpg",
-    "/images/gallery2/1-168.jpg",
-    "/images/gallery2/1-174.jpg",
-    "/images/gallery2/1-175.jpg",
-    "/images/gallery2/1-176.jpg",
-    "/images/gallery2/1-181.jpg",
-    "/images/gallery2/1-184.jpg",
-    "/images/gallery2/1-185.jpg",
-    "/images/gallery2/1-186.jpg",
-    "/images/gallery2/1-187.jpg",
-    "/images/gallery2/1-190.jpg",
-    "/images/gallery2/1-191.jpg",
-    "/images/gallery2/1-192.jpg",
-    "/images/gallery2/1-193.jpg",
-    "/images/gallery2/1-194.jpg",
-    "/images/gallery2/1-210.jpg",
-    "/images/gallery2/1-215.jpg",
-    "/images/gallery2/1-216.jpg",
-    "/images/gallery2/1-220.jpg",
-    "/images/gallery2/1-221.jpg",
-    "/images/gallery2/1-222.jpg",
-    "/images/gallery2/1-224.jpg",
-    "/images/gallery2/1-225.jpg",
-    "/images/gallery2/1-232.jpg",
-    "/images/gallery2/1-233.jpg",
-    "/images/gallery2/1-234.jpg",
-    "/images/gallery2/1-235.jpg",
-    "/images/gallery2/1-236.jpg",
-    "/images/gallery2/1-237.jpg",
-    "/images/gallery2/1-238.jpg",
-    "/images/gallery2/1-239.jpg",
-    "/images/gallery2/1-240.jpg",
-    "/images/gallery2/1-241.jpg",
-    "/images/gallery2/1-242.jpg",
-    "/images/gallery2/1-243.jpg",
-    "/images/gallery2/1-244.jpg",
-    "/images/gallery2/1-245.jpg",
-    "/images/gallery2/1-246.jpg",
-    "/images/gallery2/1-247.jpg",
-    "/images/gallery2/1-248.jpg",
-    "/images/gallery2/1-249.jpg",
-    "/images/gallery2/1-250.jpg",
-    "/images/gallery2/1-251.jpg",
-    "/images/gallery2/1-252.jpg",
-    "/images/gallery2/1-253.jpg",
-    "/images/gallery2/1-254.jpg",
-    "/images/gallery2/1-255.jpg",
-    "/images/gallery2/1-256.jpg",
-    "/images/gallery2/1-257.jpg",
-    "/images/gallery2/1-258.jpg",
-    "/images/gallery2/1-259.jpg",
-    "/images/gallery2/1-260.jpg",
-    "/images/gallery2/1-261.jpg",
-    "/images/gallery2/1-262.jpg",
+];
+
+export const GalleryThree = [
+    "/images/gallery3/1-138.jpg",
+    "/images/gallery3/1-139.jpg",
+    "/images/gallery3/1-141.jpg",
+    "/images/gallery3/1-144.jpg",
+    "/images/gallery3/1-146.jpg",
+    "/images/gallery3/1-159.jpg",
+    "/images/gallery3/1-160.jpg",
+    "/images/gallery3/1-162.jpg",
+    "/images/gallery3/1-163.jpg",
+    "/images/gallery3/1-165.jpg",
+    "/images/gallery3/1-167.jpg",
+    "/images/gallery3/1-168.jpg",
+    "/images/gallery3/1-174.jpg",
+    "/images/gallery3/1-175.jpg",
+    "/images/gallery3/1-176.jpg",
+    "/images/gallery3/1-181.jpg",
+    "/images/gallery3/1-184.jpg",
+    "/images/gallery3/1-185.jpg",
+    "/images/gallery3/1-186.jpg",
+    "/images/gallery3/1-187.jpg",
+    "/images/gallery3/1-190.jpg",
+    "/images/gallery3/1-191.jpg",
+    "/images/gallery3/1-192.jpg",
+    "/images/gallery3/1-193.jpg",
+    "/images/gallery3/1-194.jpg",
+    "/images/gallery3/1-210.jpg",
+    "/images/gallery3/1-215.jpg",
+    "/images/gallery3/1-216.jpg",
+    "/images/gallery3/1-220.jpg",
+    "/images/gallery3/1-221.jpg",
+    "/images/gallery3/1-222.jpg",
+    "/images/gallery3/1-224.jpg",
+    "/images/gallery3/1-225.jpg",
+    "/images/gallery3/1-232.jpg",
+    "/images/gallery3/1-233.jpg",
+    "/images/gallery3/1-234.jpg",
+    "/images/gallery3/1-235.jpg",
+    "/images/gallery3/1-236.jpg",
+    "/images/gallery3/1-237.jpg",
+    "/images/gallery3/1-238.jpg",
+    "/images/gallery3/1-239.jpg",
+    "/images/gallery3/1-240.jpg",
+    "/images/gallery3/1-241.jpg",
+    "/images/gallery3/1-242.jpg",
+    "/images/gallery3/1-243.jpg",
+    "/images/gallery3/1-244.jpg",
+    "/images/gallery3/1-245.jpg",
+    "/images/gallery3/1-246.jpg",
+    "/images/gallery3/1-247.jpg",
+    "/images/gallery3/1-248.jpg",
+    "/images/gallery3/1-249.jpg",
+    "/images/gallery3/1-250.jpg",
+    "/images/gallery3/1-251.jpg",
+    "/images/gallery3/1-252.jpg",
+    "/images/gallery3/1-253.jpg",
+    "/images/gallery3/1-254.jpg",
+    "/images/gallery3/1-255.jpg",
+    "/images/gallery3/1-256.jpg",
+    "/images/gallery3/1-257.jpg",
+    "/images/gallery3/1-258.jpg",
+    "/images/gallery3/1-259.jpg",
+    "/images/gallery3/1-260.jpg",
+    "/images/gallery3/1-261.jpg",
+    "/images/gallery3/1-262.jpg",
 ];
 
 interface GalleryProps {
-    gallery: "one" | "two";
+    gallery: "one" | "two" | "three";
     index?: number;
 }
 
@@ -151,15 +154,16 @@ function RNG(min: number, max: number) {
     return Math.floor(Math.random() * (max - min) + min);
 }
 
+const GalleryChoice: { [Key in GalleryProps["gallery"]]: string[] } = {
+    one: GalleryOne,
+    two: GalleryTwo,
+    three: GalleryThree,
+};
+
 export const getGalleryImage = ({ gallery, index }: GalleryProps) => {
     if (!index) {
-        index =
-            gallery === "one"
-                ? RNG(-1, GalleryOne.length + 1)
-                : RNG(-1, GalleryTwo.length + 1);
+        index = RNG(-1, GalleryChoice[gallery].length + 1);
     }
-    if (gallery === "one") {
-        return GalleryOne[index] ?? GalleryOne[0];
-    }
-    return GalleryTwo[index] ?? GalleryTwo[0];
+
+    return GalleryChoice[gallery][index] ?? GalleryChoice[gallery][0];
 };

@@ -35,7 +35,8 @@ export const PolaroidImageContainer = ({
                     alt="some image"
                     // width={50}
                     // height={50}
-                    objectFit="cover"
+                    // objectFit="cover"
+                    style={{ objectFit: "cover" }}
                     loading="eager"
                     fill
                 />
