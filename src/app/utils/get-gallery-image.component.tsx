@@ -1,6 +1,6 @@
 import * as React from "react";
 
-const GalleryOne = [
+export const GalleryOne = [
     "/images/gallery1/Adura+Seyitan-Prewedding-370.jpg",
     "/images/gallery1/Adura+Seyitan-Prewedding-551.jpg",
     "/images/gallery1/Adura+Seyitan-Prewedding-680.jpg",
@@ -17,7 +17,7 @@ const GalleryOne = [
     "/images/gallery1/Adura+Seyitan-Prewedding-2505.jpg",
     "/images/gallery1/Adura+Seyitan-Prewedding-2473.jpg",
 ];
-const GalleryTwo = ["/images/gallery1/Adura+Seyitan-Prewedding-370.jpg"];
+export const GalleryTwo = ["/images/gallery1/Adura+Seyitan-Prewedding-370.jpg"];
 
 interface GalleryProps {
     gallery: "one" | "two";
