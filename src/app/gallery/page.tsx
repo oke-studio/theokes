@@ -69,7 +69,7 @@ export default function Page() {
                 >
                     <Download />
                 </Box> */}
-                <Button
+                {/* <Button
                     sx={{
                         position: "absolute",
                         top: "-10px",
@@ -79,7 +79,7 @@ export default function Page() {
                     disableRipple
                 >
                     <Download />
-                </Button>
+                </Button> */}
             </Box>
 
             <Box sx={{ display: "flex" }}>
@@ -122,9 +122,9 @@ export default function Page() {
                                 rows={isMobile ? 1 : item.rows || 1}
                                 sx={{
                                     ":hover": {
-                                        // opacity: 0.5,
+                                        opacity: 0.6,
                                         cursor: "pointer",
-                                        transition: "opacity 0.2s ease 0s",
+                                        transition: "opacity 0.6s ease 0s",
                                     },
                                 }}
                             >
