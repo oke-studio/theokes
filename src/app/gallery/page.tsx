@@ -142,7 +142,7 @@ export default function Page() {
                     <ImageList
                         sx={{ width: "100%", height: "100%" }}
                         variant="quilted"
-                        cols={isMobile ? 2 : 4}
+                        cols={isMobile ? 1 : 4}
                         rowHeight="auto"
                         gap={24}
                     >

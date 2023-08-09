@@ -64,7 +64,12 @@ export default function Page() {
     const GalleryRender = GalleryTwo;
     const isMobile = useMediaQuery("(max-width:640px)");
 
-    const lazyLoadMobile = (index: number) => index !== 1 || 2 || 3;
+    const lazyLoadMobile = (index: number) => {
+        if (isMobile && index >= 6) {
+            return "lazy";
+        }
+        return "eager";
+    };
 
     return (
         <Box
@@ -164,7 +169,11 @@ export default function Page() {
                                     src={`${item}?w=248&fit=crop&auto=format`}
                                     srcSet={`${item}?w=248&fit=crop&auto=format&dpr=2 2x`}
                                     alt="some image"
-                                    loading={index % 2 === 0 ? "eager" : "lazy"}
+                                    loading={
+                                        lazyLoadMobile(index) || index % 2 === 0
+                                            ? "eager"
+                                            : "lazy"
+                                    }
                                 />
                                 <ImageListItemBar
                                     onClick={() => downloadImage(item)}
