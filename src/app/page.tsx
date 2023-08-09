@@ -261,6 +261,7 @@ export default function Home() {
                                 position: "relative",
                                 width: "auto",
                                 height: "100%",
+                                minHeight: "70vh",
                             }}
                         >
                             <Image
