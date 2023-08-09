@@ -321,7 +321,7 @@ export default function Home() {
                                     <Image
                                         src={getGalleryImage({
                                             gallery: "one",
-                                            index: 12,
+                                            // index: 12,
                                         })}
                                         alt="Some picture"
                                         // width={50}
@@ -394,7 +394,7 @@ export default function Home() {
                                     <Image
                                         src={getGalleryImage({
                                             gallery: "two",
-                                            index: 22,
+                                            // index: 22,
                                         })}
                                         alt="Some picture"
                                         // width={100}
