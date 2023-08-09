@@ -239,7 +239,7 @@ export default function Home() {
                                     textDecoration: "none",
                                 }}
                                 color="inherit"
-                                href="/gallery/1"
+                                href="/gallery"
                                 target="_blank"
                             >
                                 See Gallery
@@ -285,7 +285,7 @@ export default function Home() {
                                     textDecoration: "none",
                                 }}
                                 color="inherit"
-                                href="/gallery/2"
+                                href="/gallery"
                                 target="_blank"
                             >
                                 See Gallery

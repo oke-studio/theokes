@@ -4,7 +4,6 @@ import {
     GalleryTwo,
 } from "@/app/utils/get-gallery-image.component";
 import { Download } from "@mui/icons-material";
-import Image from "next/image";
 
 function srcset(image: string, size: number, rows = 1, cols = 1) {
     return {
@@ -87,15 +86,12 @@ export default function Page({ params }: { params: { id: "2" | "1" } }) {
                     <ImageList variant="masonry" cols={3} gap={24}>
                         {GalleryRender.map((item, index) => (
                             <ImageListItem key={index}>
-                                {/* <Image
+                                <img
                                     src={`${item}?w=248&fit=crop&auto=format`}
+                                    srcSet={`${item}?w=248&fit=crop&auto=format&dpr=2 2x`}
                                     alt="some image"
                                     loading="lazy"
-                                    // srcSet={`${item}?w=248&fit=crop&auto=format&dpr=2 2x`}
-                                    width={100}
-                                    height={100}
-                                    style={{ width: "auto", height: "100%" }}
-                                /> */}
+                                />
                             </ImageListItem>
                         ))}
                     </ImageList>
