@@ -12,6 +12,10 @@ import {
 import { GalleryThree } from "@/app/utils/get-gallery-image.component";
 import { Download } from "@mui/icons-material";
 import Image from "next/image";
+import JSZip from "jszip";
+import FileSaver from "file-saver";
+
+const zip = new JSZip();
 
 async function downloadImage(imageSrc: string) {
     const image = await fetch(imageSrc);
@@ -24,6 +28,28 @@ async function downloadImage(imageSrc: string) {
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
+}
+
+async function testDownloadAll(imgSrc: string) {
+    return fetch(imgSrc).then((res) => {
+        zip.file(imgSrc, res.blob());
+    });
+}
+function downloadAllImagesHelper(imageSrc: string[]) {
+    const imageArray = imageSrc.map((img) => testDownloadAll(img));
+
+    Promise.all(imageArray)
+        .then(() => {
+            //when all promises resolved - save zip file
+            zip.generateAsync({ type: "blob" }).then(function (blob) {
+                FileSaver.saveAs(blob, "gallery3.zip");
+            });
+        })
+        .catch((err) => {
+            console.log(err);
+        });
+
+    console.log(zip);
 }
 
 function srcset(image: string, size: number, rows = 1, cols = 1) {
@@ -69,7 +95,7 @@ export default function Page() {
                 >
                     <Download />
                 </Box> */}
-                {/* <Button
+                <Button
                     sx={{
                         position: "absolute",
                         top: "-10px",
@@ -77,9 +103,13 @@ export default function Page() {
                         color: "white",
                     }}
                     disableRipple
+                    onClick={() => {
+                        downloadAllImagesHelper(GalleryRender);
+                        console.log("something");
+                    }}
                 >
                     <Download />
-                </Button> */}
+                </Button>
             </Box>
             {/* <Box sx={{ width: "100%" }}>
                 <ImageList
