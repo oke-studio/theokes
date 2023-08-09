@@ -13,6 +13,7 @@ import {
 } from "@mui/material";
 import { East } from "@mui/icons-material";
 import { getGalleryImage } from "./utils/get-gallery-image.component";
+import { PolaroidImageContainer } from "@/components/polaroid-image-container/polaroid-image-container.component";
 
 const QrSvg = () => {
     return (
@@ -75,7 +76,7 @@ export default function Home() {
                     height: "100%",
                     flexDirection: "column",
                     justifyContent: "flex-start",
-                    margin: "0 auto",
+                    margin: isMobile ? "0 4px" : "0 auto",
                     maxWidth: "90vw",
                     alignItems: "center",
                     gap: "24px",
@@ -134,7 +135,29 @@ export default function Home() {
                             gap: "34px",
                         }}
                     >
-                        <Box></Box>
+                        <Box
+                            sx={{
+                                position: "relative",
+                                marginBottom: "72px",
+                                display: "flex",
+                                justifyContent: "center",
+                            }}
+                        >
+                            <PolaroidImageContainer
+                                wrapperStyles={{
+                                    rotate: "-2deg",
+                                    position: "relative",
+                                }}
+                            />
+                            <PolaroidImageContainer
+                                wrapperStyles={{
+                                    rotate: "15deg",
+                                    position: "relative",
+                                    right: "25px",
+                                    bottom: "-50px",
+                                }}
+                            />
+                        </Box>
                         <Box>
                             we want your perspective from tonight!
                             <br />
@@ -229,7 +252,7 @@ export default function Home() {
                                 // layout="responsive"
                                 fill
                                 // height={10}
-                                loading="lazy"
+                                // loading="lazy"
                                 objectFit="cover"
                             />
                         </Box>
@@ -266,15 +289,15 @@ export default function Home() {
                         >
                             <Image
                                 src={getGalleryImage({
-                                    gallery: "one",
-                                    index: 9,
+                                    gallery: "two",
+                                    index: 22,
                                 })}
                                 alt="Some picture"
                                 // width={100}
                                 // layout="responsive"
                                 fill
                                 // height={100}
-                                loading="lazy"
+                                // loading="lazy"
                                 objectFit="cover"
                             />
                         </Box>
@@ -285,7 +308,7 @@ export default function Home() {
                                     textDecoration: "none",
                                 }}
                                 color="inherit"
-                                href="/gallery"
+                                href="/gallery_two"
                                 target="_blank"
                             >
                                 See Gallery

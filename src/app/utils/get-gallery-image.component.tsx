@@ -151,11 +151,13 @@ function RNG(min: number, max: number) {
     return Math.floor(Math.random() * (max - min) + min);
 }
 
-export const getGalleryImage = ({
-    gallery,
-    index = RNG(-1, GalleryOne.length + 1),
-}: GalleryProps) => {
-    console.log(index);
+export const getGalleryImage = ({ gallery, index }: GalleryProps) => {
+    if (!index) {
+        index =
+            gallery === "one"
+                ? RNG(-1, GalleryOne.length + 1)
+                : RNG(-1, GalleryTwo.length + 1);
+    }
     if (gallery === "one") {
         return GalleryOne[index] ?? GalleryOne[0];
     }
